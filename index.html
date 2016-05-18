@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat</title>
+  </head>
+  <body id="chat">
+    <div>
+        <div class="message" v-for="message in messages">
+          <div v-if="isPoster(message[1])">
+            {{ message[2] }}
+          </div>
+        </div>
+        <form v-on:submit="send">
+          <input id="message" v-model="message" autocomplete="off"/>
+          <button>Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/users.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+  </body>
+</html>
