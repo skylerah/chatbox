@@ -1,0 +1,19 @@
+{
+  "name": "chatbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "favicon": "^0.0.2",
+    "socket.io": "^1.4.6",
+    "express": "^4.13.4",
+    "http": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
